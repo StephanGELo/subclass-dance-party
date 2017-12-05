@@ -1,6 +1,4 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  //this.makeDancer = new makeDancer(top, left, timeBetweenSteps);
-  //makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="dancer"></span>');
   this.step = function () {
     this.$node.toggle();
@@ -12,6 +10,4 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
 };
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
-
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
-
