@@ -29,5 +29,16 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
   });
+
+  $('.addDancerTwoButton').on('click', function(event) {
+
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+
+    // get the maker function for the kind of dancer we're supposed to make
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+    var dancerTwo = new dancerMakerFunction($("body").height() * Math.random(),
+                                  $("body").width() * Math.random());
+    $('body').append(dancerTwo.$node);
+  }); 
 });
 
