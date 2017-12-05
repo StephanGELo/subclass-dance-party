@@ -3,7 +3,11 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("GreenField.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  background-color: lightblue;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -23,5 +27,12 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
+  position:absolute;
+}
+
+.dancerTwo{
+  display: block;
+  margin: auto;
+  width: 3%;
   position:absolute;
 }
