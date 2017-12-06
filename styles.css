@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url("GreenField.jpeg");
+  background-image: url("https://media.giphy.com/media/5xE0kJ3FZzBeM/giphy.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -25,8 +25,9 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px;
   border-radius:10px;
+  width: 10%;
   position:absolute;
 }
 
@@ -35,4 +36,10 @@ body, a:link, a:visited, a:active{
   margin: auto;
   width: 3%;
   position:absolute;
+}
+
+#toggle {
+  width: 100px;
+  height: 100px;
+  background: #ccc;
 }
